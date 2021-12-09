@@ -230,21 +230,21 @@ img {
 .about .about-flex {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 2rem;
+  gap: 1rem;
 }
 
 .about .about-content {
   display: flex;
   justify-content: center;
-  align-items: center;
   flex-direction: column;
 }
 
 .about .about-content .left img {
-  /* height: 400px;
-  width: 400px; */
+  height: 250px;
+  width: 250px;
   object-fit: cover;
   border-radius: 6px;
+  margin-bottom: 1rem;
 }
 
 .about .about-content .right .text {
@@ -746,16 +746,25 @@ footer span a:hover {
 }
 
 /* responsive media query start */
-@media (max-width: 1300px) {
-  .home .max-width {
-    margin-left: 0px;
+
+@media (min-width: 1300px) {
+  .max-width {
+    max-width: 100%;
+  }
+
+  .about .about-flex {
+    gap: 13rem;
+  }
+
+  .about .about-content .left img {
+    height: 550px;
+    width: 550px;
   }
 }
 
-@media (max-width: 1104px) {
-  .about .about-content .left img {
-    height: 350px;
-    width: 350px;
+@media (max-width: 1300px) {
+  .home .max-width {
+    margin-left: 0px;
   }
 }
 
@@ -764,12 +773,6 @@ footer span a:hover {
     padding: 0 50px;
   }
 }
-
-/* @media (max-width: 450px) {
-  .twitter-timeline {
-    width: 18rem;
-  }
-} */
 
 @media (max-width: 947px) {
   .menu-btn {
@@ -812,7 +815,7 @@ footer span a:hover {
     padding: 10px 30px;
   }
 
-  .about .about-content .column {
+  /* .about .about-content .column {
     width: 100%;
   }
   .about .about-content .left {
@@ -822,7 +825,7 @@ footer span a:hover {
   }
   .about .about-content .right {
     flex: 100%;
-  }
+  } */
   /* .services .serv-content .card {
     width: calc(50% - 10px);
     margin-bottom: 20px;
