@@ -584,8 +584,7 @@ img {
 
 .updates {
   position: fixed;
-  top: 60%;
-  transform: translateY(-50%);
+  top: 70%;
   margin-left: -0.75rem;
   padding: 0.75rem;
 }
