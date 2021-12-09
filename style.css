@@ -230,7 +230,7 @@ img {
 .about .about-flex {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
-  gap: 1rem;
+  gap: 2rem;
 }
 
 .about .about-content {
@@ -238,8 +238,6 @@ img {
   justify-content: center;
   align-items: center;
   flex-direction: column;
-  border-right: 2px solid #333;
-  padding-right: 1rem;
 }
 
 .about .about-content .left img {
@@ -764,12 +762,6 @@ footer span a:hover {
 @media (max-width: 991px) {
   .max-width {
     padding: 0 50px;
-  }
-}
-
-@media (max-width: 916px) {
-  .about .about-content {
-    border-right: none;
   }
 }
 
