@@ -43,7 +43,7 @@ section {
 footer {
   font-family: "Poppins", sans-serif;
 }
-.about .about-content,
+.about,
 .skills .skills-content,
 .publications .publications-content,
 .contact .contact-content {
@@ -226,18 +226,29 @@ img {
 .about .title::after {
   content: "who i am";
 }
-.about .about-content .left {
-  width: 45%;
+
+.about .about-flex {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(18rem, 1fr));
+  gap: 1rem;
 }
+
+.about .about-content {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-right: 2px solid #333;
+  padding-right: 1rem;
+}
+
 .about .about-content .left img {
-  height: 400px;
-  width: 400px;
+  /* height: 400px;
+  width: 400px; */
   object-fit: cover;
   border-radius: 6px;
 }
-.about .about-content .right {
-  width: 55%;
-}
+
 .about .about-content .right .text {
   font-size: 25px;
   font-weight: 600;
@@ -577,24 +588,6 @@ img {
   background: none;
 }
 
-/* news and updates */
-.m-1 {
-  margin: 1.5rem 0;
-}
-
-.updates {
-  position: fixed;
-  bottom: 20%;
-  margin-left: -0.75rem;
-  padding: 0.75rem;
-}
-
-.updates a {
-  font-size: 3rem;
-  font-weight: 400;
-  color: #1da1f2;
-}
-
 /* footer section styling */
 footer {
   background: #111;
@@ -773,6 +766,19 @@ footer span a:hover {
     padding: 0 50px;
   }
 }
+
+@media (max-width: 916px) {
+  .about .about-content {
+    border-right: none;
+  }
+}
+
+/* @media (max-width: 450px) {
+  .twitter-timeline {
+    width: 18rem;
+  }
+} */
+
 @media (max-width: 947px) {
   .menu-btn {
     display: block;
