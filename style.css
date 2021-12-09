@@ -585,16 +585,17 @@ img {
 .updates {
   position: fixed;
   top: 45%;
-  margin-left: -4.6rem;
-  transform: rotate(-90deg);
-  background-color: rgb(89, 161, 105);
-  padding: 0.8rem 1.4rem;
+  margin-left: -0.75rem;
+  /* transform: rotate(-90deg); */
+  /* background-color: rgb(89, 161, 105); */
+  /* border-radius: 50%; */
+  padding: 0.75rem;
 }
 
 .updates a {
-  font-size: 1.4rem;
+  font-size: 3rem;
   font-weight: 400;
-  color: #fff;
+  color: #1da1f2;
 }
 
 /* footer section styling */
